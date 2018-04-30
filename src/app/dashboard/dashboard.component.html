@@ -1,0 +1,38 @@
+<app-menu></app-menu>
+
+<div class="section"></div>
+<div class="container" >
+  <nav>
+    <div class="nav-wrapper">
+      <form>
+        <div class="input-field">
+          <input id="search" type="search" placeholder="Search Users on Git hub by name" [value]="searchKey" (keyup)="searchUser($event.target.value)" required>
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons" (click)="removeSearch()">close</i>
+        </div>
+      </form>
+    </div>
+  </nav>
+  <div class="collection">
+    <a class="searchedName collection-item" *ngFor="let user of userList" (click)="selectedUser(user)">{{user.name}}</a>
+  </div>
+
+  <div class="section"></div>
+  <!-- Person Details starts from here -->
+  <div class="row" *ngIf="chosenUser != undefined">
+      <div class="col s12 m7">
+        <div class="card">
+          <div class="card-image">
+            <img src={{chosenUser.owner.avatar_url}}>
+            <span class="card-title">{{chosenUser.full_name}}</span>
+          </div>
+          <div class="card-content">
+            <p>{{chosenUser.description}}</p>
+          </div>
+          <div class="card-action">
+            <a href={{chosenUser.owner.html_url}} target="_blank">Visit Git Hub Page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

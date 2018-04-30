@@ -1,0 +1,38 @@
+
+.login-card{
+    background-color: #E96C24;    
+    margin:auto;
+    /* display: inline-block;  */
+    max-width: 420px;
+    padding: 32px 48px 0px 48px; 
+    border: 1px solid #EEE;
+}
+input{
+    background-color: white !important;
+    border-bottom: white !important;
+    border-radius: 2px !important;
+}
+.custom-button{
+    background-color: #E96C24;
+    border:1px solid;
+}
+.footer-para-text{
+    color: #999;
+    line-height: 14px;
+}
+.para-text{
+    font: inherit;
+    font-size: 13px;
+}
+.footer-top-border{
+    border-top: 4px solid #1d75bc;
+}
+.footer-image{
+    margin-top: 18%;
+}
+.footerlogo{
+    border-right: 1px solid #999;
+}
+.error{
+    color:red;
+}

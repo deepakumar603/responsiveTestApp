@@ -1,0 +1,79 @@
+
+<app-menu></app-menu>
+          
+<main>
+    
+    <div class="section"></div>
+    <div class="section"></div>
+
+    <div class="container">
+        
+      <div class="login-card row">
+        <h5 class="white-text">Account Log In</h5>
+        <form class='col s12' (ngSubmit)="login()" ngNativeValidate>
+          <div class='row'>
+            <div class='col s12'>
+            </div>
+          </div>
+
+          <div class='row'>
+            <div class='input-field col s12'>
+              <input class='validate' placeholder="Username" type='text' name='username' [(ngModel)]="username" id='username' required/>
+            </div>
+          </div>
+
+          <div class='row'>
+            <div class='input-field col s12'>
+              <input class='validate' placeholder="Password" type='password' name='password' [(ngModel)]="password" id='password' required/>
+            </div>
+            <p class="error">{{errorMessage}}</p>
+          </div>
+
+          <br />
+          
+            <div class='row'>
+              <div class='col s12'>
+                <button type='submit'  name='btn_login' class='col s12 btn btn-large waves-effect custom-button'>Login</button>
+              </div>
+            </div>
+            
+        </form>
+        
+            <label>
+                <a class='pink-text' href=''><b>Forgot Password?</b></a>
+            </label>
+          
+      </div>
+    </div>
+  
+</main>
+<div class="section"></div>
+<div class="section"></div>
+
+<footer>
+  <div class="container footer-top-border">
+    <div class="row">
+        <div class='col s2'></div>
+    </div>
+    <div class="row">
+        <div class='col s2'></div>
+    </div>
+    <div class='row '>
+      <div class='col s12'>
+          <div class="row">
+              <div class='col s3'>
+                <div class="footerlogo">
+                    <img class="responsive-img footer-image" src="assets/logo-footer.png" />
+                </div>                  
+              </div>
+              <div class='col s9 footer-para-text'>
+                  <p class="para-text">Cross Blue Shield of Massachusetts is an Independent Licensee of the Blue Cross and Blue Shield Association. Registered Marks of the Blue Cross and Blue Shield Association.</p>
+                  <p class="para-text">2018 Blue Cross and Blue Shield of Massachusetts, Inc., and Blue Cross and Blue Shield of Massachusetts HMO Blue, Inc.</p>
+                  <p class="para-text">101 Huntington Avenue, Suite 1300, Boston, MA 02199-7611 | 800-262-BLUE (2583)</p>
+              </div>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+</footer>
